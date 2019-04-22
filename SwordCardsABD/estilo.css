@@ -1,0 +1,554 @@
+/*#################CONTENEDOR PRINCIPAL (BODY)##############*/
+body {
+	margin: 0px;
+	height:100%;
+	width:100%;
+    overflow: scroll;
+	background-image: url("images/bg.png");
+	background-size: 100%;
+}
+div#contenedor {
+	width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+	flex-direction:column;
+}
+
+
+/*#################CABECERA################*/
+
+div#cabecera {
+	min-height: 50px;
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+}
+div#cabecera .logoCabecera{
+    width: 60%;
+    height: 40%;
+}
+div#cabecera .logoCabecera a{
+	width: 30%;
+	height: 50%;
+	align-self: flex-start;
+}
+div#cabecera .logoCabecera h1{
+    align-self: initial;
+    justify-content: center;
+    text-shadow: 2px 2px 4px black;
+	color:white;
+	border: #303030;
+    font:18em Fantasy;
+	font-size: 75px;
+}
+div#cabecera .logoCabecera img{
+	justify-content: flex-start;
+    align-self: center;
+    margin: 2px;
+    margin-right: 150px;
+	width: 30%;
+	height: 40%;
+}
+div#cabecera .botonesLogin{
+	justify-content: flex-end;
+    align-self:flex-end;
+	display: flex;
+	margin-left: 310px;
+	margin-bottom: 10px;
+}
+div#cabecera .botonesLogin button {
+	background-color: black;
+	border-bottom-style: 2px solid black;
+	border-color: 15px #318aac;
+	margin-left: 15px;
+	padding:16px 32px;
+	color: white;
+	font-size: 24px;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+  }
+  div#cabecera .botonesLogin button:hover {
+	background-color: darkblue;
+	color: white;
+  }
+/*##################CONTENIDO####################*/
+
+div#contenido {
+	min-height: 400px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+    background-color: black;
+}
+ div#contenido div#codigo{
+	text-align: center;
+ }
+
+/*Pagina de inicio*/
+
+div#contenido .paginaInicio{
+	display: flex;
+	height: 50%;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+}
+div#contenido .paginaInicio .eslogan{
+	margin:40px;
+	font-family: serif;
+	color:white;
+	width: 100%;
+	font-size: 60px;
+	height: 100%;
+}
+div#contenido .paginaInicio .codigos{
+	width:60%;
+	margin:40px;
+	height:100%;
+}
+div#contenido .codigos img{
+	width: 100%;
+	height: 70%;
+	justify-content: center;
+}
+
+/*Login*/
+
+div#contenido div#plogin {
+	display: flex;
+	height: 400px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+} 
+div#contenido div#plogin legend{
+	color: #fff;
+}
+div#contenido div#plogin #formLogReg fieldset{
+	min-height: 200px;
+	height: 70%;
+	width: 540px;
+	display: flex;
+	border: 1px solid black;
+	margin: 0 auto;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+
+}
+div#contenido div#plogin #formLogReg legend {
+	color: #fff;
+	background: #303030;
+	border: 1px solid black;
+	padding: 2px 6px;
+	margin-bottom: 30px;
+} 
+
+
+/*Registro*/
+
+div#contenido div#pregistro {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+} 
+div#contenido div#pregistro legend{
+	color: #fff;
+}
+div#contenido div#pregistro #formLogReg fieldset{
+	height: 70%;
+	display: flex;
+	border: 1px solid black;
+	margin: 0 auto;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+
+}
+div#contenido div#pregistro #formLogReg legend {
+	color: #fff;
+	background: #303030;
+	border: 1px solid black;
+	padding: 2px 6px;
+	margin-bottom: 30px;
+} 
+div#contenido div fieldset .grupo-control {
+	margin: 30px;
+	margin-top: 20px;
+	min-width: 500px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+div#contenido label{
+	color:lightgray;
+	margin-left: 100px;
+}
+
+/*Menu administrador*/
+
+
+div#contenido .inicioAdmin select {
+	
+	line-height: 2.5em;
+    word-break: break-word;
+    margin-bottom: 2.5em;
+}
+
+div#contenido .inicioAdmin option {
+    font-weight: normal;
+    display: flex;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 10px 80px 10px 20px;
+}
+
+div#contenido .inicioAdmin input {
+	padding: 10px 80px 10px 20px;
+	width: 250px;
+	
+}
+div#contenido .inicioAdmin{
+	align-self: center; 
+	margin: 100px;
+	justify-content: space-between;
+	width:100%;
+}
+
+div#contenido .inicioAdmin button{
+  color: #318aac ; 
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0,0,0,0);
+  border: 2px solid;
+  border-color: #ffffff;
+  transition: all 1s ease;
+  position: relative;
+
+}
+
+div#contenido .inicioAdmin ul{
+	list-style: none
+	
+}
+
+div#contenido .inicioAdmin button:hover {
+	background: blue;
+	color: #fff !important;
+}
+
+
+/*Menu Profesor*//*Menu alumno*/
+
+div#contenido div.contenidoProfesor ,div#contenido div.contenidoAlumno{
+	display: flex;
+	height: 100%;
+	width: 50%;
+	padding: 20px;
+	justify-content:  space-between;
+	text-align: center;
+	flex-direction: column;
+	align-items: flex-start;
+} 
+div#contenido div.contenidoProfesor div.asignatura,div#contenido div.contenidoAlumno div.asignatura{
+	width: 70%;
+	padding: 4px;
+	margin: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+div#contenido div.contenidoProfesor div.asignatura .asignaturaTitulo,div#contenido div.contenidoAlumno div.asignatura .asignaturaTitulo{
+	width: 100%;
+	min-height: 40px;
+	border: 3px black solid;
+	border-radius: 15px;
+	background-color: rgb(224, 164, 164);
+	display: flex;
+	margin-bottom: 5px;
+	justify-content: space-around;
+	align-items: center;
+}
+div#contenido div.contenidoProfesor div.asignatura .asignaturaTitulo .asignaturaNombre, div#contenido div.contenidoAlumno div.asignatura .asignaturaTitulo .asignaturaNombre{
+	width: 75%;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 25px;
+}
+div#contenido div.contenidoProfesor div.asignatura .tema, div#contenido div.contenidoAlumno div.asignatura .tema{
+	width: 90%;
+	min-height: 30px;
+	padding-left: 10px;
+	border: 2px black solid;
+	margin-top: 5px;
+	background-color: rgb(204, 223, 168);
+	margin: 3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div#contenido div.contenidoProfesor div.asignatura .tema .temaTitulo, div#contenido div.contenidoAlumno div.asignatura .tema .temaTitulo{
+	width: 30%;
+	font-size: 20px;
+	font-family: fantasy;
+}
+div#contenido div.contenidoProfesor div.asignatura .tema .añadirEnunciado{
+	width: 30%;
+}
+div#contenido div.contenidoProfesor div.asignatura .enunciado, div#contenido div.contenidoAlumno div.asignatura div.enunciado{
+	width: 80%;
+	min-height: 30px;
+	padding-left: 10px;
+	background-color: rgb(124, 165, 240);
+	border: 1px black solid;
+	margin-top: 5px;
+	margin: 3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div#contenido div.contenidoProfesor div.asignatura .enunciado #enlacesEnunciadoProfesor{
+	width: 40%;
+	min-height: 30px;
+	margin-left: 6px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div#contenido div.contenidoAlumno div.asignatura div.crearPracticas{
+	width: 60%;
+	min-height: 30px;
+	padding-left: 10px;
+	border: 2px rgb(0, 0, 0) solid;
+	background-color: rgb(233, 221, 221);
+	
+	margin-top: 5px;
+	margin: 3px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Times New Roman', Times, serif;
+	
+}
+div#contenido div.contenidoAlumno div.asignatura div.crearPracticas a{
+	text-decoration: none;
+	color:rgb(0, 0, 0);
+}
+div#contenido div.contenidoAlumno div.asignatura div.crearPracticas:hover{
+	background-color: rgb(131, 255, 93);
+}
+
+div#contenido div.contenidoProfesor div.asignatura .enunciado:hover, div#contenido div.contenidoAlumno div.asignatura .practicaAl:hover{
+	background-color: rgb(129, 126, 25);
+	color:white;
+}
+div#contenido div.contenidoAlumno div.asignatura div.menuPracticas{
+	width: 60%;
+	min-height: 30px;
+	padding-left: 10px;
+	margin-top: 5px;
+	margin: 3px;
+	display: flex;
+	justify-content: flex-end;
+	font-family: 'Times New Roman', Times, serif;
+	align-items: center;
+}
+div#contenido div.contenidoAlumno div.asignatura div.menuPracticas div.practicaAl, div#contenido div.contenidoAlumno div.asignatura div.menuPracticas div.borrarPractica {
+	width: 100%;
+	min-height: 30px;
+	border: 2px black solid;
+	margin-top: 5px;
+	margin: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+div#contenido div.contenidoAlumno div.asignatura div.menuPracticas div.practicaAl a, div#contenido div.contenidoAlumno div.asignatura div.menuPracticas div.borrarPractica a{
+	text-decoration: none;
+	display: flex;
+	color: black;
+	justify-content: space-around;
+	align-items: center;
+	margin: 5px;
+}
+div#contenido div.contenidoProfesor div.asignatura .enunciado:hover, div#contenido div.contenidoAlumno div.asignatura div.menuPracticas .practicaAl:hover, div#contenido div.contenidoAlumno div.asignatura div.menuPracticas .borrarPractica:hover{
+	background-color: rgb(81, 170, 211);
+	border-color: rgb(247, 245, 243);
+	color: black;
+}
+
+div#contenido div.contenidoAlumno div.asignatura div.practicaAl{
+display: flex;
+justify-content: flex-end;
+border: 2px black solid;
+}
+
+div#contenido div#pcrearPractica{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/*Añadir enunciado*/
+div#contenido .addEnunciado{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+/*Añadir enunciado*/
+iframe{
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Pagina de detalles*/
+
+div#contenido .splitUp {
+  position: relative;
+  width: auto;
+  float: center;
+  height: 30%;
+  background-color: #FFFFFF;
+  border: 2px solid black;
+  padding: 12px;
+  margin:30px;
+  font-size: 20px;
+  text-decoration:none;
+}
+#contenido .splitUp h1{
+	font-size: 30px;
+}
+#contenido .splitUp a{
+	text-decoration:none;
+	color: rgb(31, 230, 130);
+}
+#contenido .splitUp a:hover{
+	color: rgb(230, 31, 31);
+}
+#contenido .splitDown {
+  position: inherit;
+  width: 100%;
+  height:70%;
+  font-size: 20px;
+}
+
+/* Contacto*/
+
+div#contenido #personales{
+	margin: 30px ; 
+	padding : 20px ; 
+}
+div#contenido div#contacto{
+	width: 100%;
+	display: flex;
+	color:white;
+	justify-content:space-around ;
+	align-items: center;
+}
+div#contenido div#contacto div.formContacto{
+	width: 70%;
+	margin: 10px;
+	margin-bottom: 17px;
+	display: flex;
+	justify-content:space-around ;
+	align-items: center;
+}
+/*####################CARDS########################*/
+div#contenido div.cartasTabla {
+	display: flex;
+	flex-wrap: wrap;
+	height: 80%;
+	width: 50%;
+	padding: 25px;
+	justify-content: center;
+	color:white;
+	border-radius: 5%;
+	text-align: center;
+	flex-direction: column;
+	align-items: initial;
+	border: 1px solid white;
+	background: #55198a;
+	margin:6px;
+	overflow: hidden;
+}
+div#contenido div.cartasTabla div.titulo{
+	justify-content: flex-start;
+	text-align: initial;
+	font-size: 25px;
+	font:2em Fantasy;
+}
+
+div#contenido div.cartasTabla div.ratio{
+	justify-content: flex-end;
+	text-align: initial;
+}
+
+div#contenido div.cartasTabla div.estadisticas{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	text-align: center;
+	margin: 3px;
+    border: 1px solid white;
+    color:white;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 8px;
+	background: black;
+}
+
+div#contenido div.cartasTabla div.estadisticas p{
+    color:white;
+	font-weight: bold;
+	justify-content: center;
+	text-align: left;
+}
+
+div#contenido div.cartasTabla a{
+	color:red;
+}
+/*####################PIE########################*/
+
+div#pie {
+	min-height: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #333;
+	color: white;
+	bottom: 0;
+}
+div#pie a{
+	text-decoration: none;
+	color:white;
+	margin-left: 15px;
+}
+div#pie div{
+	display: flex;
+	justify-content: space-around;
+}
+div#pie a:hover{
+	text-decoration: underline;
+	color: #89ca3e
+}
