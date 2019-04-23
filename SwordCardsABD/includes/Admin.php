@@ -17,7 +17,7 @@ class Admin extends Usuario{
 		
 	}
 
-	public function modCards($selection){
+	public static function modCards($selection){
         $app = Aplicacion::getSingleton();
         $conn = $app->conexionBd();
 		$idAdmin = $_SESSION['id'];	

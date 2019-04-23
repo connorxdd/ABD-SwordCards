@@ -506,7 +506,7 @@ div#contenido div.cartasTabla div.ratio{
 div#contenido div.cartasTabla div.estadisticas{
 	display: flex;
 	justify-content: space-between;
-	flex-direction: column;
+	flex-direction: row;
 	text-align: center;
 	margin: 3px;
     border: 1px solid white;
@@ -517,12 +517,30 @@ div#contenido div.cartasTabla div.estadisticas{
 	background: black;
 }
 
+div#contenido div.cartasTabla div.estadisticas img{
+	display: flex;
+	text-align: right;
+	justify-content: end;
+	width: 165px;
+	height: 185px;
+	margin:6px;
+}
+
+div#contenido div.cartasTabla div.estadisticas img .imagenCard{
+	display: flex;
+	justify-content: right;
+	text-align: right;
+}
 div#contenido div.cartasTabla div.estadisticas p{
-    color:white;
+	color:white;
 	font-weight: bold;
-	justify-content: center;
+}
+div#contenido div.cartasTabla div.estadisticas p .info{
+	display: flex;
+	justify-content: left;
 	text-align: left;
 }
+
 
 div#contenido div.cartasTabla a{
 	color:red;

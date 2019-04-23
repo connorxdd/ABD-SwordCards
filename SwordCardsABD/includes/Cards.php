@@ -122,32 +122,43 @@ class Cards
     }
 
 
-    public function generaContenido(){
+    public static function generaContenido(){
         $app = Aplicacion::getSingleton();
         $conn = $app->conexionBd();
         $query=sprintf("SELECT * FROM cards");
         $rs = $conn->query($query);
         $result = false;
         $dirAct = getcwd();
-        if ($rs) {                
+        if ($rs->num_rows > 0) {                
             while($fila = $rs->fetch_assoc()){
                 echo "<div class=cartasTabla>
                         <div class=estadisticas>
+                        <div id=info>
                         <p>Nombre: ".$fila['nombreCarta']."</p>
                         <p>Tipo: ".$fila['tipo']."</p>
                         <p>Valor: ".$fila['valor']."</p>
                         <p>Descripción: ".$fila['descripcion']."</p>
                         <p> WinRate: ".$fila['winRate']."</p>
-                        <img src='$dirAct/uploads/images/".$fila['idCarta']."/".$fila['idCarta'].".png' width=280 height=125 title=Logo of a company alt=Logo of a company/>
+                        </div>
+                        <div id=imagenCard>
+                        <img src='/ABD-SwordCards-master/SwordCardsABD/uploads/images/".$fila['idCarta']."/".$fila['idCarta'].".png' width=280 height=125 title=Logo of a company alt=Logo of a company/>
+                        </div>
                         <a href='modDeck.php?idCard=".$fila['idCarta']."&nombreCarta=".$fila['nombreCarta']."'>
                             Añadir a mazo</a>
+                            
                         </div>
                         
                     </div>";
             }
         } 
         else {
-            echo "No hay cartas disponibles aún";
+            echo "<div class=cartasTabla>
+                <div class=estadisticas>
+                <div id=info> 
+                <p>No hay cartas disponibles aún </p>
+                </div>
+                </div>
+                </div>";
         }
         return $result;
     }
