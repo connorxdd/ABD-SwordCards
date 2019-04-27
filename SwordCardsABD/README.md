@@ -1,27 +1,6 @@
-# Practica3AW
-### Tareas 
+﻿#Practica ABD
 
-## Profesor 
-
-1. Crea temas. (con todas las tablas asociadas que esto conlleva, si se necesita)-------->Mario
-2. Crea enunciados.------------> Guille
-3. Borrar Temas------>Mario
-4. Borrar Enunciados--------->Mario
-5. Ver enunciados ------------------------> Guille
-6. Ver practicas de los alumnos para x enunciado. -------------->Guille
-
-## Alumno
-
-
-1. Crea Practicas (subir o cambiar archivo ya subido) --------------------> DANIEL
-2. Borrar prácticas. --------------------> DANIEL
-3. Ver enunciado (solo verlo)
-4. Ver práctica --------------------> DANIEL
-
-
-## Admin
-
-1. Añadir asignaturas ---> Gabriel 
-2. Borrar asignaturas ---> Gabriel 
-3. Añadir matriculados ---> Gabriel 
-4. Borrar matriculados ---> Gabriel 
+Para montar la práctica en el servidor:
+1.Crear un usuario con los todos los privilegios en phpmyadmin: nombre: user, host-name: localhost, password: swordcards2019.
+2.Entrar en la aplicación como usuario normal: usuario: User1, contraseña: 12345
+3.Entrar en la aplicación como administrador: usuario: Mario, contraseña: 12345

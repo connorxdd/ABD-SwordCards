@@ -141,7 +141,7 @@ class Cards
                         <p> WinRate: ".$fila['winRate']."</p>
                         </div>
                         <div id=imagenCard>
-                        <img src='/ABD-SwordCards-master/SwordCardsABD/uploads/images/".$fila['idCarta']."/".$fila['idCarta'].".png' width=280 height=125 title=Logo of a company alt=Logo of a company/>
+                        <img src='/SwordCardsABD/uploads/images/".$fila['idCarta']."/".$fila['idCarta'].".png' width=280 height=125 title=Logo of a company alt=Logo of a company/>
                         </div>
                         <a href='modDeck.php?idCard=".$fila['idCarta']."&nombreCarta=".$fila['nombreCarta']."'>
                             Añadir a mazo</a>

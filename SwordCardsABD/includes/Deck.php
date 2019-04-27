@@ -92,7 +92,7 @@ class Deck
                     $rs2 = $conn->query($listaCartas);
                     if ($rs2->num_rows > 0) {
                         while($cartasDisponibles = $rs2->fetch_assoc()){
-                            //$auxMedia+=$cartasDisponibles['winRate'];
+                            $auxMedia+=$cartasDisponibles['winRate'];
                             echo "<div class=estadisticas>";
                             echo "<p>$cartasDisponibles[nombreCarta]</p>";
                             echo "<p>$cartasDisponibles[tipo]</p>";
@@ -104,8 +104,10 @@ class Deck
                         $auxMedia = $auxMedia/$rs2->num_rows;
                       
                     }
+                    $auxMedia *= 10;
+                    echo "<p>WinRate: $auxMedia% </p>";
                     echo "</div>";
-                    echo "<p>WinRate: $auxMedia </p>";
+                   
                 }
             }
             else{
